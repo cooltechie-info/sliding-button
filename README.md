@@ -1,4 +1,4 @@
-[![pub package](https://img.shields.io/badge/pub-0.0.1-blue.svg)](https://pub.dev/packages/sliding_widget)
+[![pub package](https://img.shields.io/badge/pub-0.0.2-blue.svg)](https://pub.dev/packages/sliding_widget)
 
 A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
 
