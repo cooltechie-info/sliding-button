@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -39,16 +40,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            SlidingButton(
-              width: 400,
-              height: 60,
-              backgroundColor: Colors.blue,
-              foregroundColor: Colors.white,
-              iconColor: Colors.blue,
-              text: 'Slide to Confirm',
-              sliderButtonContent: const Icon(Icons.arrow_forward_ios),
-              shadow: const BoxShadow(color: Colors.transparent),
-              onConfirmation: () {},
+            Center(
+              child: SlidingButton(
+                width: 350,
+                height: 60,
+                backgroundColor: Colors.blue,
+                foregroundColor: Colors.white,
+                iconColor: Colors.blue,
+                label: 'Slide to proceed',
+                shadow: const BoxShadow(color: Colors.transparent),
+                action: () {},
+                child: const Icon(Icons.arrow_forward_ios),
+              ),
             )
           ],
         ),

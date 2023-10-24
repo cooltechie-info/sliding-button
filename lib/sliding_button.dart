@@ -9,11 +9,11 @@ class SlidingButton extends StatefulWidget {
   final Color? backgroundColorEnd;
   final Color foregroundColor;
   final Color iconColor;
-  final Widget sliderButtonContent;
+  final Widget child;
   final BoxShadow? shadow;
-  final String text;
-  final TextStyle? textStyle;
-  final VoidCallback onConfirmation;
+  final String label;
+  final TextStyle? labelStyle;
+  final VoidCallback action;
   final VoidCallback? onTapDown;
   final VoidCallback? onTapUp;
   final BorderRadius? foregroundShape;
@@ -29,14 +29,14 @@ class SlidingButton extends StatefulWidget {
     this.foregroundColor = Colors.blueAccent,
     this.iconColor = Colors.white,
     this.shadow,
-    this.sliderButtonContent = const Icon(
+    this.child = const Icon(
       Icons.chevron_right,
       color: Colors.white,
       size: 35,
     ),
-    this.text = "Slide to confirm",
-    this.textStyle,
-    required this.onConfirmation,
+    this.label = "Slide to proceed",
+    this.labelStyle,
+    required this.action,
     this.onTapDown,
     this.onTapUp,
     this.foregroundShape,
@@ -84,7 +84,7 @@ class SlidingButtonState extends State<SlidingButton> {
 
   void sliderReleased(details) {
     if (_position > widget.width - widget.height) {
-      widget.onConfirmation();
+      widget.action();
     }
     updatePosition(details);
   }
@@ -128,13 +128,14 @@ class SlidingButtonState extends State<SlidingButton> {
     }
 
     TextStyle style;
-    if (widget.textStyle == null) {
+    if (widget.labelStyle == null) {
       style = const TextStyle(
-        color: Colors.black26,
+        fontSize: 22,
+        color: Colors.white70,
         fontWeight: FontWeight.bold,
       );
     } else {
-      style = widget.textStyle!;
+      style = widget.labelStyle!;
     }
 
     return AnimatedContainer(
@@ -155,7 +156,7 @@ class SlidingButtonState extends State<SlidingButton> {
         children: <Widget>[
           Center(
             child: Text(
-              widget.text,
+              widget.label,
               style: style,
             ),
           ),
@@ -199,7 +200,7 @@ class SlidingButtonState extends State<SlidingButton> {
                       BorderRadius.all(Radius.circular(widget.height / 2)),
                   color: widget.foregroundColor,
                 ),
-                child: widget.sliderButtonContent,
+                child: widget.child,
               ),
             ),
           ),

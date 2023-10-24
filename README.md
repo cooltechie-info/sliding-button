@@ -2,6 +2,11 @@
 
 A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
 
+## Screenshots
+
+<img src="example/assets/image1.png" width="200">
+<br>
+
 ## Features
 
 - Highly customizable
@@ -24,10 +29,10 @@ A sliding Flutter widget, which helps to start an event based on user interactio
           backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
           iconColor: Colors.blue,
-          text: 'Slide to Confirm',
-          sliderButtonContent: const Icon(Icons.arrow_forward_ios),
+          text: 'Slide to proceed',
           shadow: const BoxShadow(color: Colors.transparent),
           onConfirmation: () {},
+          child: const Icon(Icons.arrow_forward_ios),
         ) 
 ```
 
@@ -48,6 +53,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -83,10 +89,10 @@ class _MyHomePageState extends State<MyHomePage> {
               backgroundColor: Colors.blue,
               foregroundColor: Colors.white,
               iconColor: Colors.blue,
-              text: 'Slide to Confirm',
-              sliderButtonContent: const Icon(Icons.arrow_forward_ios),
+              text: 'Slide to proceed',              
               shadow: const BoxShadow(color: Colors.transparent),
               onConfirmation: () {},
+              child: const Icon(Icons.arrow_forward_ios),
             )
           ],
         ),
@@ -95,3 +101,23 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+## Custom Usage
+There are several options that allows for more control:
+
+|  Properties  |   Default   |   Description   |
+|--------------|-----------------|--------------|
+| `height` | null ?? 70 | Gives a height to a widget |
+| `width` | null ?? 300 | Gives a width to a widget |
+| `backgroundColor` | Colors.white | Gives a background color to a widget |
+| `backgroundColorEnd` | null | Gives a background color to a widget while dragged |
+| `foregroundColor` | Colors.blueAccent | Gives a color to a slidder button |
+| `label` | Slide to proceed | A text widget which assigns a label |
+| `labelStyle` | Colors.white70, FontWeight.bold | Assigns label TextStyle |
+| `shadow` | Colors.black38, Offset(0, 2), blurRadius: 2 | Gives a shadow to a slidder button |
+| `stickToEnd` | false | Make it true if the Icon need to be placed in the end position |
+| `action` | null | (required) Define an action after sliding a button |
+| `child` | Icons.chevron_right | For more customizable button add your own widget |
+
+<br>
+<br>

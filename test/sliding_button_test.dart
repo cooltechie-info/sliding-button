@@ -14,10 +14,10 @@ void main() {
           backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
           iconColor: Colors.blue,
-          text: 'Slide to Confirm',
-          sliderButtonContent: const Icon(Icons.arrow_forward_ios),
+          label: 'Slide to Confirm',
           shadow: const BoxShadow(color: Colors.transparent),
-          onConfirmation: () {},
+          action: () {},
+          child: const Icon(Icons.arrow_forward_ios),
         ),
       ),
     ));
