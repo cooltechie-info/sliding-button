@@ -4,7 +4,7 @@ A sliding Flutter widget, which helps to start an event based on user interactio
 
 ## Screenshots
 
-<img src="example/assets/image1.png" width="200">
+<img src="https://github.com/cooltechie-info/sliding-button/blob/master/example/assets/image1.png" width="200">
 
 ## Features
 
