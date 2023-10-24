@@ -1,4 +1,4 @@
-[![pub package](https://img.shields.io/badge/pub-0.0.1-blue.svg)](https://pub.dev/packages/sliding_button)
+[![pub package](https://img.shields.io/badge/pub-0.0.1-blue.svg)](https://pub.dev/packages/sliding_widget)
 
 A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
 
@@ -16,13 +16,13 @@ A sliding Flutter widget, which helps to start an event based on user interactio
 1. Import the package.
 
 ```Dart
- import 'package:sliding_button/sliding_button.dart';
+ import 'package:sliding_widget/sliding_widget.dart';
 ```
 
 2. Use the widget in your code.
 
 ```Dart
- SlidingButton(
+ SlidingWidget(
           width: 350,
           height: 60,
           backgroundColor: Colors.blue,
@@ -41,7 +41,7 @@ A sliding Flutter widget, which helps to start an event based on user interactio
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:sliding_button/sliding_button.dart';
+import 'package:sliding_widget/sliding_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            SlidingButton(
+            SlidingWidget(
               width: 350,
               height: 60,
               backgroundColor: Colors.blue,
