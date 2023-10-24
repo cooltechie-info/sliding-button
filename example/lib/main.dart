@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sliding_button/sliding_button.dart';
+import 'package:sliding_widget/sliding_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Center(
-              child: SlidingButton(
+              child: SlidingWidget(
                 width: 350,
                 height: 60,
                 backgroundColor: Colors.blue,

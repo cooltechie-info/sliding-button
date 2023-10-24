@@ -2,7 +2,7 @@ library sliding_button;
 
 import 'package:flutter/material.dart';
 
-class SlidingButton extends StatefulWidget {
+class SlidingWidget extends StatefulWidget {
   final double height;
   final double width;
   final Color backgroundColor;
@@ -20,7 +20,7 @@ class SlidingButton extends StatefulWidget {
   final BorderRadius? backgroundShape;
   final bool stickToEnd;
 
-  const SlidingButton({
+  const SlidingWidget({
     super.key,
     this.height = 70,
     this.width = 300,
@@ -46,11 +46,11 @@ class SlidingButton extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return SlidingButtonState();
+    return SlidingWidgetState();
   }
 }
 
-class SlidingButtonState extends State<SlidingButton> {
+class SlidingWidgetState extends State<SlidingWidget> {
   double _position = 0;
   int _duration = 0;
 

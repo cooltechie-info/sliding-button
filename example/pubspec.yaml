@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sliding_button:
+  sliding_widget:
     path: ../
  
   cupertino_icons: ^1.0.2
