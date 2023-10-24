@@ -13,6 +13,12 @@ A sliding Flutter widget, which helps to start an event based on user interactio
 
 ## Getting started
 
+1. Add the dependency.
+
+```yml
+ sliding_widget: *latest-version*;
+```
+
 1. Import the package.
 
 ```Dart
@@ -117,6 +123,10 @@ There are several options that allows for more control:
 | `stickToEnd` | false | Make it true if the Icon need to be placed in the end position |
 | `action` | null | (required) Define an action after sliding a button |
 | `child` | Icons.chevron_right | For more customizable button add your own widget |
+| `foregroundShape` | BorderRadius.all(Radius.circular(widget.height / 2)) | Gives shape to the child widget through BorderRadius |
+| `backgroundShape` | BorderRadius.all(Radius.circular(widget.height)) | Gives shape to the background widget through BorderRadius |
+| `onTapDown` | null | Add action when user interacts with the widget |
+| `onTapUp` | null | Add action when user interacts with the widget |
 
 <br>
 <br>
