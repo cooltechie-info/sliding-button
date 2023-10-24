@@ -1,4 +1,4 @@
-[![pub package](https://img.shields.io/badge/pub-0.0.2-blue.svg)](https://pub.dev/packages/sliding_widget)
+[![pub package](https://img.shields.io/badge/pub-0.0.3-blue.svg)](https://pub.dev/packages/sliding_widget)
 
 A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
 
@@ -34,10 +34,19 @@ A sliding Flutter widget, which helps to start an event based on user interactio
           backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
           iconColor: Colors.blue,
+
+          /// Text to be displayed inside the button.
           text: 'Slide to proceed',
+
           shadow: const BoxShadow(color: Colors.transparent),
-          onConfirmation: () {},
+
+          /// Accepts function, default is null, this property is required.
+          action: () {},
+
           child: const Icon(Icons.arrow_forward_ios),
+          
+          /// Whether the icon to be fixed at the end.
+          stickToEnd: false,
         ) 
 ```
 
@@ -94,9 +103,9 @@ class _MyHomePageState extends State<MyHomePage> {
               backgroundColor: Colors.blue,
               foregroundColor: Colors.white,
               iconColor: Colors.blue,
-              text: 'Slide to proceed',              
+              text: 'Slide to proceed',
               shadow: const BoxShadow(color: Colors.transparent),
-              onConfirmation: () {},
+              action: () {},
               child: const Icon(Icons.arrow_forward_ios),
             )
           ],

@@ -1,3 +1,7 @@
+## 0.0.3
+
+* Added detailed example.
+
 ## 0.0.2
 
 * Added screenshots.
