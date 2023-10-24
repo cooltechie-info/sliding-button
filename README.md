@@ -1,11 +1,10 @@
-[![pub package](https://img.shields.io/badge/pub-0.0.2-blue.svg)](https://pub.dev/packages/sliding_button)
+[![pub package](https://img.shields.io/badge/pub-0.0.1-blue.svg)](https://pub.dev/packages/sliding_button)
 
 A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
 
 ## Screenshots
 
 <img src="example/assets/image1.png" width="200">
-<br>
 
 ## Features
 
@@ -24,7 +23,7 @@ A sliding Flutter widget, which helps to start an event based on user interactio
 
 ```Dart
  SlidingButton(
-          width: 400,
+          width: 350,
           height: 60,
           backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
@@ -84,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SlidingButton(
-              width: 400,
+              width: 350,
               height: 60,
               backgroundColor: Colors.blue,
               foregroundColor: Colors.white,
@@ -111,10 +110,10 @@ There are several options that allows for more control:
 | `width` | null ?? 300 | Gives a width to a widget |
 | `backgroundColor` | Colors.white | Gives a background color to a widget |
 | `backgroundColorEnd` | null | Gives a background color to a widget while dragged |
-| `foregroundColor` | Colors.blueAccent | Gives a color to a slidder button |
+| `foregroundColor` | Colors.blueAccent | Gives a color to a slider button |
 | `label` | Slide to proceed | A text widget which assigns a label |
 | `labelStyle` | Colors.white70, FontWeight.bold | Assigns label TextStyle |
-| `shadow` | Colors.black38, Offset(0, 2), blurRadius: 2 | Gives a shadow to a slidder button |
+| `shadow` | Colors.black38, Offset(0, 2), blurRadius: 2 | Gives a shadow to a slider button |
 | `stickToEnd` | false | Make it true if the Icon need to be placed in the end position |
 | `action` | null | (required) Define an action after sliding a button |
 | `child` | Icons.chevron_right | For more customizable button add your own widget |
