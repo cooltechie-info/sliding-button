@@ -1,10 +1,6 @@
-[![pub package](https://img.shields.io/badge/pub-0.0.3-blue.svg)](https://pub.dev/packages/sliding_widget)
+[![pub package](https://img.shields.io/badge/pub-0.0.4-blue.svg)](https://pub.dev/packages/sliding_widget)
 
 A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
-
-## Screenshots
-
-<img src="https://github.com/cooltechie-info/sliding-button/blob/master/example/assets/image1.png?raw=true" width="200">
 
 ## Features
 
@@ -16,16 +12,16 @@ A sliding Flutter widget, which helps to start an event based on user interactio
 1. Add the dependency.
 
 ```yml
- sliding_widget: *latest-version*;
+sliding_widget: ^0.0.4
 ```
 
-1. Import the package.
+2. Import the package.
 
 ```Dart
  import 'package:sliding_widget/sliding_widget.dart';
 ```
 
-2. Use the widget in your code.
+3. Use the widget in your code.
 
 ```Dart
  SlidingWidget(

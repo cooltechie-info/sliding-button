@@ -1,7 +1,10 @@
 name: sliding_widget
 description: A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
-version: 0.0.3
+version: 0.0.4
 repository: https://github.com/cooltechie-info/sliding-button
+screenshots:
+  - description: 'Sliding widget'
+    path: example/assets/image1.png
 
 environment:
   sdk: '>=3.1.2 <4.0.0'
