@@ -1,3 +1,7 @@
+## 0.0.5
+
+* Added guidelines.
+
 ## 0.0.4
 
 * Added documentation.

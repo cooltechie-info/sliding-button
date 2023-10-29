@@ -3,21 +3,52 @@ library sliding_button;
 import 'package:flutter/material.dart';
 
 class SlidingWidget extends StatefulWidget {
+  /// This is the height of the widget - [double]
   final double height;
+
+  /// This is the width of the widget - [double]
   final double width;
+
+  /// This is the background color of the sliding widget - [Color]
   final Color backgroundColor;
+
+  /// This is the background color of the widget when slided - [Color]
   final Color? backgroundColorEnd;
+
+  /// This is the foreground color of the widget - [Color]
   final Color foregroundColor;
+
+  /// This is the icon color of the widget - [Color]
   final Color iconColor;
+
+  /// This is the child widget for the sliding widget - [Widget]
   final Widget child;
+
+  /// This is the shadow effect of the widget - [BoxShadow]
   final BoxShadow? shadow;
+
+  /// This is the display text for the widget - [String]
   final String label;
+
+  /// This is the text style for the display / button text of the sliding widget - [TextStyle]
   final TextStyle? labelStyle;
+
+  /// This is the callback function of the widget when tapped - [VoidCallback]
   final VoidCallback action;
+
+  /// This is the callback function of the widget when tapped down - [VoidCallback]
   final VoidCallback? onTapDown;
+
+  /// This is the callback function of the widget when tapped up- [VoidCallback]
   final VoidCallback? onTapUp;
+
+  /// This is the foreground shape / border of the widget - [BorderRadius]
   final BorderRadius? foregroundShape;
+
+  /// This is the background shape / border of the widget - [BorderRadius]
   final BorderRadius? backgroundShape;
+
+  /// This is the condtion check for sticking to the end on completion of the widget - [bool]
   final bool stickToEnd;
 
   const SlidingWidget({
@@ -51,9 +82,13 @@ class SlidingWidget extends StatefulWidget {
 }
 
 class SlidingWidgetState extends State<SlidingWidget> {
+  /// This is to hold the current position when dragged
   double _position = 0;
+
+  /// This is the duration value for sliding animation
   int _duration = 0;
 
+  /// This method is to determine the position of the widget when dragged
   double getPosition() {
     if (_position < 0) {
       return 0;
@@ -64,6 +99,7 @@ class SlidingWidgetState extends State<SlidingWidget> {
     }
   }
 
+  /// This method is to update the position of the widget when dragged
   void updatePosition(details) {
     if (details is DragEndDetails) {
       setState(() {
@@ -82,6 +118,7 @@ class SlidingWidgetState extends State<SlidingWidget> {
     }
   }
 
+  /// This method indicates the button gesture input details
   void sliderReleased(details) {
     if (_position > widget.width - widget.height) {
       widget.action();

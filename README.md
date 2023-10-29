@@ -1,4 +1,4 @@
-[![pub package](https://img.shields.io/badge/pub-0.0.4-blue.svg)](https://pub.dev/packages/sliding_widget)
+[![pub package](https://img.shields.io/badge/pub-0.0.5-blue.svg)](https://pub.dev/packages/sliding_widget)
 
 A sliding Flutter widget, which helps to start an event based on user interaction. Highly customizable and flexible.
 
@@ -12,7 +12,7 @@ A sliding Flutter widget, which helps to start an event based on user interactio
 1. Add the dependency.
 
 ```yml
-sliding_widget: ^0.0.4
+sliding_widget: ^0.0.5
 ```
 
 2. Import the package.
